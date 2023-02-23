@@ -2,14 +2,87 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>David Halapir</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <h1>David Halapir</h1>
+      <h4>frontend / mobile dev</h4>
+      <br />
+      <br />
+      <br />
+      <a href="mailto:halapir.david@gmail.com">halapir.david@gmail.com</a>
+      <br />
+      <a href="https://twitter.com/david_halapir"
+        >https://twitter.com/david_halapir</a
+      >
+      <a href="https://www.linkedin.com/in/david-halapir/"
+        >https://www.linkedin.com/in/david-halapir/</a
+      >
+    </div>
+  </body>
 </html>
+
+<style>
+  *,
+  *:after,
+  *:before {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    font-family: monospace;
+
+    color: #ecf8f8;
+    display: flex;
+  }
+
+  a {
+    display: block;
+    color: inherit;
+  }
+
+  .container {
+    width: 60rem;
+    margin: auto;
+    padding: 0 0.5rem;
+  }
+
+  .background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: radial-gradient(#e66465, #9198e5);
+
+    /* animation-name: what;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+  }
+
+  @keyframes what {
+    from {
+      background-size: 100% 100%;
+    }
+    to {
+      background-size: 150% 150%;
+    }
+  }
+</style>
