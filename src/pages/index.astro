@@ -1,4 +1,22 @@
 ---
+const links = [
+  {
+    label: "LogPush",
+    href: "https://logpush.vercel.app",
+  },
+  {
+    label: "9 agency",
+    href: "https://9.agency",
+  },
+  {
+    label: "WhatDo",
+    href: "https://whatdo.in",
+  },
+  {
+    label: "Formeus",
+    href: "https://formeus.dev",
+  },
+];
 ---
 
 <html lang="en">
@@ -32,6 +50,22 @@
       >
       </div>
     </article>
+    <div>
+      <div class="flex flex-wrap gap-4 mt-44 max-w-[65ch] mx-auto px-4">
+        {
+          links.map((link) => {
+            return (
+              <a
+                class="no-underline font-medium text-neutral-100 text-sm border px-3 py-2 hover:bg-neutral-100 hover:text-neutral-800 transition-all"
+                href={link.href}
+              >
+                {link.label}
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
   </body>
 
   <style is:global>
